@@ -7,7 +7,7 @@ import random  # Added for random response selection
 
 
 # Set your OpenAI GPT-3 API key
-openai.api_key = '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'
+openai.api_key = ''
 
 # Set up MySQL connection
 db_connection = mysql.connector.connect(
