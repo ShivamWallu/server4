@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+    <!-- <h1>Chatbot Response</h1>
+    <form action="/chat" method="get">
+        <label for="user_input">You:</label>
+        <input type="text" name="user_input" id="user_input" value="{{ user_input }}" required>
+        <button type="submit">Send</button>
+    </form> -->
+
+    {% if chatbot_response %}
+      <p><strong>You:</strong> {{ user_input }}</p>
+      <p><strong>Chatbot:</strong> {% if user_name %}{{ user_name }}, {% endif %}{{ chatbot_response }}</p>
+    {% endif %}
+  
+</body>
+</html>
