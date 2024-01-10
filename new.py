@@ -2,8 +2,11 @@ import nltk
 from nltk.chat.util import Chat, reflections
 import openai
 from flask import Flask, render_template, request
+import random 
 import mysql.connector
-import random  # Added for random response selection
+import sqlite3
+print(sqlite3.sqlite_version)
+
 
 
 # Set your OpenAI GPT-3 API key
