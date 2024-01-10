@@ -5,6 +5,7 @@ from flask import Flask, render_template, request
 import random 
 import mysql.connector
 import sqlite3
+import _sqlite3
 print(sqlite3.sqlite_version)
 
 
